@@ -1,0 +1,59 @@
+@font-face {
+  font-family: TTNorms;
+  font-weight: bold;
+  src: url("/fonts/TTNorms-Bold.ttf"), url("/fonts/TTNorms-Bold.woff"), url("/fonts/TTNorms-Bold.eot");
+}
+
+@font-face {
+  font-family: TTNorms;
+  src: url("/fonts/TTNorms-Medium.ttf"), url("/fonts/TTNorms-Medium.woff"), url("/fonts/TTNorms-Medium.eot");
+}
+
+body {
+  font-size: 20px;
+  display: flex;
+  font-family: 'TTNorms';
+}
+
+span {
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  span {
+    font-size: 15px;
+  }
+}
+
+div {
+  font-size: 30px;
+}
+
+@media (max-width: 767px) {
+  div {
+    font-size: 20px;
+  }
+}
+
+.sidebar {
+  width: 290px;
+  height: 100%;
+}
+
+.avatar {
+  margin-top: 92px;
+  text-align: center;
+}
+
+.avatar__img {
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.avatar__login {
+  font-size: 20px;
+}
+
+.avatar__login img {
+  vertical-align: bottom;
+}

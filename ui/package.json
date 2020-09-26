@@ -1,0 +1,18 @@
+{
+  "name": "awesome-chat-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "motionrus",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.2.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
