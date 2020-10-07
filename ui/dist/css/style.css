@@ -9,10 +9,17 @@
   src: url("/fonts/TTNorms-Medium.ttf"), url("/fonts/TTNorms-Medium.woff"), url("/fonts/TTNorms-Medium.eot");
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-size: 20px;
   display: flex;
   font-family: 'TTNorms';
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
 span {
@@ -35,11 +42,6 @@ div {
   }
 }
 
-.sidebar {
-  width: 290px;
-  height: 100%;
-}
-
 .avatar {
   margin-top: 92px;
   text-align: center;
@@ -56,4 +58,87 @@ div {
 
 .avatar__login img {
   vertical-align: bottom;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+}
+
+.sidebar {
+  width: 300px;
+  min-width: 300px;
+}
+
+.content {
+  width: 100%;
+  background: linear-gradient(180deg, #F3F3FB 0%, #FDFBFD 100%);
+}
+
+.menu {
+  margin-top: 60px;
+  list-style-type: none;
+  color: #707C97;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 0;
+  vertical-align: center;
+  height: calc(100% - 301px);
+  display: flex;
+  flex-direction: column;
+}
+
+.menu > li {
+  margin-left: 20px;
+  padding: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.menu > li:last-child {
+  flex-grow: 1;
+}
+
+.menu > li > img {
+  margin-right: 20px;
+}
+
+.menu__bottom {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-top: auto;
+}
+
+.menu__bottom > img {
+  margin-right: 20px;
+}
+
+.active {
+  color: #2A8BF2;
+  margin-left: 0px !important;
+  padding-left: 0px !important;
+}
+
+.active img {
+  margin: 0px 20px 0px 28px;
+}
+
+.active__border {
+  display: inline-block;
+  width: 3px;
+  height: 40px;
+  background: #2A8BF2;
+  box-shadow: 1px 0px 10px rgba(42, 139, 242, 0.45), 0px 0px 10px rgba(42, 139, 242, 0.55), 4px 0px 25px rgba(42, 139, 242, 0.75);
+  border-radius: 3px;
+}
+
+.border {
+  width: 4px;
+  height: 40px;
+  background: #2A8BF2;
+  box-shadow: 1px 0px 10px rgba(42, 139, 242, 0.45), 0px 0px 10px rgba(42, 139, 242, 0.55), 4px 0px 25px rgba(42, 139, 242, 0.75);
+  border-radius: 3px;
+  margin-left: -1px;
 }
