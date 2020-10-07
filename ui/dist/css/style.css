@@ -79,7 +79,7 @@ div {
   margin-top: 60px;
   list-style-type: none;
   color: #707C97;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 19px;
   padding: 0;
   vertical-align: center;
@@ -89,7 +89,7 @@ div {
 }
 
 .menu > li {
-  margin-left: 20px;
+  margin: 15px;
   padding: 12px;
   cursor: pointer;
   display: flex;
