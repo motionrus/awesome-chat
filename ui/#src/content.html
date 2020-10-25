@@ -1,7 +1,7 @@
 <main class="main">
     <div class="sidebar">
         <div class="avatar">
-            <img src="img/avatar.png" alt="" class="avatar__img">
+            <img src="img/avatar.png" alt="" class="avatar__img avatar__img_shadow">
             <p class="avatar__login">Henry Jabbawockiez
                 <a href="#">
                     <img src="img/icons/feather-icon_chevron-down.svg" alt="description">
@@ -10,14 +10,221 @@
         </div>
         <ul class="menu">
             <li><img src="img/icons/menu/home.svg" alt="description">HOME</li>
-            <li class="active"><div class="border"></div><img src="img/icons/menu/message.svg" alt="">CHAT</li>
+            <li class="active">
+                <div class="border"></div>
+                <img src="img/icons/menu/message.svg" alt="">CHAT
+            </li>
             <li><img src="img/icons/menu/person.svg">CONTACT</li>
             <li><img src="img/icons/menu/notification.svg" alt="">NOTIFICATIONS</li>
             <li><img src="img/icons/menu/calendar.svg" alt="">CALENDAR</li>
             <li><img src="img/icons/menu/settings.svg" alt="">SETTINGS</li>
-            <li><div class="menu__bottom"><img src="img/icons/menu/logout.svg" alt="">LOGOUT</p></div></li>
+            <li>
+                <div class="menu__bottom"><img src="img/icons/menu/logout.svg" alt="">LOGOUT
+                </div>
+            </li>
         </ul>
     </div>
     <div class="content">
+        <div class="content__middle">
+            <div class="middle">
+                <div class="chats">
+                    <div class="chats__header">
+                        <div>
+                            <h1>Chats</h1>
+                            <p>Recent Chats
+                                <a href="#">
+                                    <img src="img/icons/feather-icon_chevron-down.svg" alt="description">
+                                </a>
+                            </p>
+                        </div>
+                        <div>
+                            <button><img src="img/icons/plus.svg" alt=""> Create New Chat</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <select name="">
+                        <option value="1">Messages</option>
+                        <option value="1">Threads</option>
+                    </select>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="wrapper_scroll">
+                    <div class="message">
+                        <div class="message-header">
+                            <div class="online"></div>
+                            <img src="img/avatar2.png" alt="" class="avatar__img avatar__img_small margin-right20">
+                            <div class="message-header__description">
+                                <div class="message-header__name">Luy Robin</div>
+                                <div class="message-header__status"><img src="img/icons/animated/typing.svg"
+                                                                         class="margin-right10"> writing
+                                </div>
+                            </div>
+                            <div class="message-header__date">1 minute ago</div>
+                        </div>
+                        <div class="message__body">
+                            <div class="message__text">
+                                More of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et
+                                malorum (On
+                                the Boundaries of Goods and Evils; finibus may also be translated as purposes).
+                            </div>
+                            <div class="counter">
+                                <p>2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="message-header">
+                            <div class="online"></div>
+                            <img src="img/avatar3.png" alt="" class="avatar__img avatar__img_small margin-right20">
+                            <div class="message-header__description">
+                                <div class="message-header__name">Jared Sunn</div>
+                                <div class="message-header__status"><img src="img/icons/animated/voice.svg"
+                                                                         class="margin-right10"> records voice message
+                                </div>
+                            </div>
+                            <div class="message-header__date">1 minute ago</div>
+                        </div>
+                        <div class="message__body">
+                            <img src="img/icons/Icon_Outline_mic.svg" alt="" class="margin-right10">
+                            <div class="message__text">
+                                Voice message (01:15)
+                            </div>
+                            <div class="counter">
+                                <p>1</p>
+                            </div>
+                        </div>
+                        <div class="message__bottom">
+                            <div class="chips chips_blue">
+                                <img src="img/icons/Icon_Outline_file-text.svg" alt="">
+                                Files (x2)
+                            </div>
+                            <div class="chips chips_red">
+                                <img src="img/icons/Icon_Outline_image.svg" alt="">
+                                Photo
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message message_selected">
+                        <div class="message-header">
+                            <img src="img/avatar4.png" alt="" class="avatar__img avatar__img_small margin-right20">
+                            <div class="message-header__description">
+                                <div class="message-header__name">Nika Jerrardo</div>
+                                <div class="message-header__status message-header__status_white">last online 5 hours
+                                    ago
+                                </div>
+                            </div>
+                            <div class="message-header__date message-header__last-sign_white">3 days ago</div>
+                        </div>
+                        <div class="message__body">
+                            <div class="message__text message__text_white">
+                                Cicero famously orated against his political opponent Lucius Sergius Catilina.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="message-header">
+                            <img src="img/avatar5.png" alt="" class="avatar__img avatar__img_small margin-right20">
+                            <div class="message-header__description">
+                                <div class="message-header__name">David Amrosa</div>
+                                <div class="message-header__status">last online 5 hours
+                                    ago
+                                </div>
+                            </div>
+                            <div class="message-header__date">3 days ago</div>
+                        </div>
+                        <div class="message__body">
+                            <div class="message__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur consectetur
+                                corporis cumque dicta eos, et eum fugiat labore nisi pariatur possimus quae quisquam
+                                reiciendis saepe, sequi tempora ullam vero.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__last">
+            <div class="content-header">
+                <div class="message-header">
+                    <img src="img/avatar4.png" alt="" class="avatar__img avatar__img_small margin-right20">
+                    <div class="message-header__description">
+                        <div class="message-header__name">Nika Jerrardo</div>
+                        <div class="message-header__status">last online 5 hours
+                            ago
+                        </div>
+                    </div>
+                    <div class="circe"><img src="img/icons/Icon_Outline_attach-2.svg" alt="" class="icon-attach"></div>
+                    <div class="circe"><img src="img/icons/Icon_Outline_more-vertical.svg" alt="" class="icon-attach">
+                    </div>
+                </div>
+            </div>
+            <div class="content-body">
+                <div class="content-row">
+                    <img src="/img/avatar4.png" alt="" class="avatar__img avatar__img_very-small">
+                    <div class="content-row__message">
+                        Hello! Finally found the time to write to you) I need your help in creating interactive
+                        animations for my mobile application.
+                    </div>
+                    <img class="pointer" src="/img/icons/Icon_Outline_more-horizontal.svg" alt="">
+                </div>
+                <div class="content-row">
+                    <img src="/img/avatar4.png" alt="" class="avatar__img avatar__img_very-small">
+                    <div>
+                        <div class="content-row__message">
+                            Can I send you files?
+                        </div>
+                        <div class="message-last-date">4 days ago</div>
+                    </div>
+                    <img class="pointer" src="/img/icons/Icon_Outline_more-horizontal.svg" alt="">
+                </div>
+
+                <div class="content-row content-row__align-right">
+                    <img class="pointer" src="/img/icons/Icon_Outline_more-horizontal.svg" alt="">
+                    <div>
+                        <div class="content-row__message">
+                            Hey! Okay, send out.
+                        </div>
+                        <div class="message-last-date">4 days ago</div>
+                    </div>
+                    <img src="/img/icons/Icon_Outline_all-done.svg" alt="">
+                </div>
+
+                <div class="content-row">
+                    <img src="/img/avatar4.png" alt="" class="avatar__img avatar__img_very-small">
+                    <div>
+                        <div class="attach">
+                            <div class="attach__file">
+                                <img src="/img/icons/Icon_Outline_file.svg" alt="">
+                            </div>
+                            <div class="attach__description">
+                                <div class="attach__title">Style.zip</div>
+                                <div class="attach__size">41.36 Mb</div>
+                            </div>
+                        </div>
+                        <div class="message-last-date">4 days ago</div>
+                    </div>
+                    <img class="pointer" src="/img/icons/Icon_Outline_more-horizontal.svg" alt="">
+                </div>
+                <div class="line-break"><span>3 days ago</span></div>
+                <div class="content-row content-row__align-right">
+                    <img class="pointer" src="/img/icons/Icon_Outline_more-horizontal.svg" alt="">
+                    <div>
+                        <div class="content-row__message">
+                            Hello! I tweaked everything you asked. I am sending the finished file.
+                            <div class="attach-message">
+                                <div>(52.05 Mb) New_Style.zip</div>
+                                <img src="/img/icons/Icon_Outline_file_blue.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="message-header__date">3 days ago</div>
+                    </div>
+                    <img src="/img/icons/Icon_Outline_checkmark.svg" alt="">
+                </div>
+
+            </div>
+        </div>
     </div>
 </main>
